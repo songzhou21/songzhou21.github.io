@@ -1,9 +1,9 @@
-title: SONGZHOU
+title: SONG ZHOU
 email: songzhou21@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
     I wouldn't drink the coffee. Always tasted like boiled dirt.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://songzhou21.github.io"
 twitter_username: songzhou21
 github_username:  songzhou21
 
