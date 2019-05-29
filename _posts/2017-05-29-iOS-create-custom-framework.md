@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "iOS 手动创建 Framework"
-date: 2017-05-29
-categories: programming
 ---
 
 # iOS 手动创建 Framework

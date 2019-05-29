@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Coordinator Design pattern
-date: 2018-11-17
-categories: programming
 ---
 
 # 传统的导航逻辑处理

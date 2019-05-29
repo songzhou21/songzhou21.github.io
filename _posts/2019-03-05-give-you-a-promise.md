@@ -1,7 +1,5 @@
 ---
 title: FBLPromises 源码分析
-date: 2019-03-05
-categories: programming
 ---
 
 # Intro

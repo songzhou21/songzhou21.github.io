@@ -1,7 +1,6 @@
 ---
+layout: post
 title: iOS Refresh Control
-date: 2019-03-02
-category: programming
 ---
 
 iOS refresh control, support pull to refresh(top and bottom), infinite refresh from bottom.

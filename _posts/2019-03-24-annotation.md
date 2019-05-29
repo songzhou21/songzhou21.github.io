@@ -1,8 +1,6 @@
 ---
 layout: post
 title: TBAnnotationClustering 源码浅析
-date: 2019-03-24
-categories: programming
 ---
 
 在地图上展示标注点是一个比较常见的需求，展示成百上千个标注点也不奇怪。我之前公司有做一款公共出行 app，需要在地图上展示上千个公共自行车标注点（光杭州地区）。
