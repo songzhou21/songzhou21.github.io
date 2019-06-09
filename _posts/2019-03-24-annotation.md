@@ -313,7 +313,16 @@ clutering 的代码精简后：
 
 ## zoomScale
 
-zoomScale 表示一个 `MKMapoint` 等于多少个 screen point，实测 zoomScale(0, 大概1.4)。
+zoomScale 的定义如下：
+
+`double scale = mapView.bounds.size.width / mapView.visibleMapRect.size.width;`
+
+所以 `MapPoint length = ScreenPoint length / Scale`
+
+实测 zoomScale(0, 大概1.4)，所以 zoomScale 越大，地图可视区域范围越小。
+
+
+
 
 ## ZoomLevel
 
@@ -328,10 +337,14 @@ zoomScale 表示一个 `MKMapoint` 等于多少个 screen point，实测 zoomSca
 log2f 函数
 
 scale 的范围分这两种情况：
-(0, 1/sqrt(2))  0 <= zoomLevel < zoomLevelAtMaxZoom
 
+- (0, 1/sqrt(2))
 
-[1/sqrt(2), sqrt(2)) zoomLevel = zoomLevelAtMaxZoom
+0 <= zoomLevel < zoomLevelAtMaxZoom
+
+- [1/sqrt(2), sqrt(2))
+
+zoomLevel = zoomLevelAtMaxZoom
 
 1/sqrt(2) 是 log2f(scale) = -0.5 的情况，此时的缩放级别刚好是最大缩放级别（zoomLevelAtMaxZoom）。因为 scale 会小于 sqrt(2)（根据测试），所以最大的缩放级别也不会超过 zoomLevelAtMaxZoom。因为实际初始的的 scale 为 0.000015，所以实际的 zoomLevel 范围为 [4-20]。
 
